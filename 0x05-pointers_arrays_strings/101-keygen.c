@@ -10,9 +10,9 @@
 int main(void)
 {
 	int pass[100];
-	int i, sum, n,
-
-	srandi(time(NULL));
+	int i, sum, n;
+	
+	for (i = 0; i < 100; i++)
 	{
 	pass[i] = rand() % 78;
 	sum += (pass[i] + '0');
@@ -22,6 +22,7 @@ int main(void)
 	n = 2772 - sum - '0';
 	sum += n;
 	putchar(n + '0');
+	break;
 	}
 	}
 	return (0);
